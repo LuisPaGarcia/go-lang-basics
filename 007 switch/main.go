@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	i := 10
@@ -24,14 +26,14 @@ func main() {
 		fmt.Println("weekday")
 	}
 
-	whatType := func(i interface{}){
+	whatType := func(i interface{}) {
 		switch t := i.(type) {
-			case bool:
-				fmt.Println("Booleano")
-			case int:
-				fmt.Println("Entero")
-			default:
-				fmt.Printf("Ningun tipo controlado: %T\n", t)
+		case bool:
+			fmt.Println("Booleano")
+		case int:
+			fmt.Println("Entero")
+		default:
+			fmt.Printf("Ningun tipo controlado: %T\n", t)
 		}
 	}
 	whatType(123)

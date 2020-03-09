@@ -1,16 +1,18 @@
 package main
 
-import "fmt"
-import "math"
+import (
+	"fmt"
+	"math"
+)
 
 const s string = "constant"
 
-func main(){
+func main() {
 	fmt.Println(s)
 
 	const a = 500000
 
-	const d = 3e20/a
+	const d = 3e20 / a
 	fmt.Println(d)
 
 	fmt.Println(int64(d))
